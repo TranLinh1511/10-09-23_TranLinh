@@ -96,7 +96,7 @@ public class BookManagement {
         for (int i = 1; i < n; i++) {
             double key = arr.get(i).getInterest();
             int j = i - 1;
-            while (j >= 0 && arr.get(j).getInterest() < key) {
+            while (j >= 0 && arr.get(j).getInterest() > key) {
                 swap(arr, j, j + 1);
                 j = j - 1;
             }
