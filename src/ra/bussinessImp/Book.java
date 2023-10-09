@@ -125,7 +125,7 @@ public class Book implements IBook {
                 }
             }
             if (isExist) {
-                System.err.println("Id đã tồn tại! Vui lòng nhập lại...!!");
+                System.out.println("Id đã tồn tại! Vui lòng nhập lại...!!");
             } else {
                 this.bookId = id;
                 break;
@@ -142,7 +142,7 @@ public class Book implements IBook {
             System.out.print("Nhập tiêu đề sách: ");
             String title = InputMethods.getString();
             if (title.length() <= 10) {
-                System.err.println("Tiêu đề không được dưới 10 kí tự! Vui lòng nhập lại...");
+                System.out.println("Tiêu đề không được dưới 10 kí tự! Vui lòng nhập lại...");
             } else {
                 this.title = title;
                 break;
@@ -165,7 +165,7 @@ public class Book implements IBook {
             System.out.print("Nhập đầu ra: ");
             float exportPrice1 = InputMethods.checkNum();
             if (exportPrice1 < this.importPrice * (0.2)) {
-                System.err.println("Đầu ra không được nhỏ hơn 20% đầu vào!! Vui lòng nhập lại...");
+                System.out.println("Đầu ra không được nhỏ hơn 20% đầu vào!! Vui lòng nhập lại...");
             } else {
                 this.exportPrice = exportPrice1;
                 break;
@@ -180,7 +180,7 @@ public class Book implements IBook {
                 this.bookStatus = Boolean.parseBoolean(status);
                 break;
             } else {
-                System.err.println("Yêu cầu nhập đúng trường! Vui lòng nhập lại...");
+                System.out.println("Yêu cầu nhập đúng trường! Vui lòng nhập lại...");
             }
         } while (isExit);
         System.out.println("<---------------------------------------------------->");
